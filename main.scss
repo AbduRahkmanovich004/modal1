@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  user-select: none;
+}
+button{
+  all: unset;
+}
+html{
+  font-size: 150%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.btn {
+  text-align: center;
+  color: white;
+  padding: 1.4rem;
+  font-weight: 600;
+  width: 20rem;
+  height: 4rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 2.5rem;
+  background-image: linear-gradient(
+    150deg,
+    rgb(40, 40, 181),
+    rgb(135, 158, 234)
+  );
+  box-shadow: 0 0 20px rgb(3, 83, 162);
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 50px rgb(0, 51, 255);
+    background-image: linear-gradient(
+      170deg,
+      rgb(40, 40, 181),
+      rgb(135, 158, 234)
+    );
+  }
+}
+.hidden{
+    transform: translate(-50rem,-50rem);
+}
+.hidden1{
+  display: none;
+}
+.overley{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    background: #0000006b;
+}
+.modal{
+  box-shadow: 0px 0px 5rem black;
+  transition: all 1s;
+  overflow: hidden;
+    position: absolute;
+    width: 60%;
+    background-image: linear-gradient(135deg,rgb(50, 50, 245), rgb(145, 201, 250));
+    padding: 4%;
+    text-align: center;
+    z-index: 3;border-radius: 7px;
+    
+    h1{
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p{
+      line-height: 1.5rem;
+    }
+    .hr{
+      margin: 1.5rem 0;
+      height: 0.05rem;
+      width: 100%;
+      background: white;
+    }
+    p{
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+    .btnP{
+      position: relative;
+      text-align: left;
+      padding: 0 5%;
+      .closeModal{
+        position: absolute;
+        right: 0rem;
+        top: -4rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 1.1rem;
+        height: 1.1rem;
+        &:hover{
+          transform: translateY(-0.1rem);
+        }
+      }
+      .forCrle{
+        border-radius: 50%;
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        right: -7rem;
+        top: -11rem;
+        border: 1px solid white;
+      }
+    }
+    .btn11{
+        width: 100%;
+        text-align: left;
+        margin-top: 1.9rem;
+        .btnMod{
+            font-size: 1rem;
+            font-family: sans-serif;
+            border-radius: 2rem;
+            border: 0.5px solid white;
+            padding: 0.4rem 0.8rem;
+            color: white;
+            letter-spacing: 0.17px;
+            &:hover{
+              transform: translateY(0.2rem);
+            }
+        }
+    }
+}
